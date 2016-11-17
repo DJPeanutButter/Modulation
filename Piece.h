@@ -32,4 +32,12 @@ struct Piece{
 	Piece (char r, char c, char t);
 };
 
+Piece*			SelectPiece	(char r, char c, Piece* arrPieces, int lPieces);
+Piece*			SelectPiece	(char r, char c, std::vector<Piece> &p);
+void			MovePiece	(Piece &p, char r, char c);
+std::vector<Piece>	FindMoves	(Piece &p);
+std::vector<Piece>	FindMoves	(Piece &p, std::vector<Piece> pieces);
+std::vector<Piece>	FindMoves	(Piece &p, std::vector<Piece> friendly, std::vector<Piece> hostile);
+int			FindTarget	(Piece &p, std::vector<Piece> v);
+
 #endif
