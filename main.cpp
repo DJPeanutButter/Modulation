@@ -4,6 +4,9 @@
 #include <gl/gl.h>
 #include <math.h>
 
+#define GD_COLS 16
+#define GD_ROWS 24
+
 LRESULT CALLBACK	WndProc	(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 void			EnableOpenGL (HWND hWnd, HDC *hDC, HGLRC *hRC);
