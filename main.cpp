@@ -85,7 +85,7 @@ void EnableOpenGL (HWND hWnd, HDC *hDC, HGLRC *hRC){
 	
 	ZeroMemory (&pfd, sizeof (pfd));
 	
-	pfd.nSixze	= sizeof (pfd);
+	pfd.nSize	= sizeof (pfd);
 	pfd.nVersion	= 1;
 	pfd.dwFlags	= PFD_DRAW_TO_WINDOW | PFD_SUPPORT_OPENGL;
 	pfd.iPixelType	= PFD_TYPE_RGBA;
