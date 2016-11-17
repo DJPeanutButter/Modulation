@@ -17,8 +17,8 @@ struct Color{
 	Color (float r, float g, float b);
 };
 
-Color		COLOR		(float r, float g, float b);
-Color		INVERT		(Color &c);
-void inline	SetColor	(Color c);
+Color	COLOR		(float r, float g, float b);
+Color	INVERT		(Color &c);
+void	SetColor	(Color c);
 
 #endif
