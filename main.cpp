@@ -1,4 +1,5 @@
 #include "Piece.h"
+#include "Background.h"
 
 #define GD_COLS 16
 #define GD_ROWS 24
@@ -150,8 +151,6 @@ int WINAPI WinMain (HINSTANCE hInstance,HINSTANCE hPrevInstance,LPSTR lpCmdLine,
 	hWnd = CreateWindowEx (WS_EX_TOPMOST, "GLWindowClass", "Modulation",  WS_POPUP | WS_VISIBLE, 0, 0, GetSystemMetrics(1)*(GD_COLS/(float)GD_ROWS), GetSystemMetrics(1), NULL, NULL, hInstance, NULL);
 	
 	EnableOpenGL (hWnd, &hDC, &hRC);
-	
-	hKnightLeft->dir = DR_UP | DR_RIGHT;
 	
 	while (!bQuit){
 		if (PeekMessage (&msg, NULL, 0, 0, PM_REMOVE)){
