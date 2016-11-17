@@ -1,0 +1,1 @@
+g++ -o Modulation.exe main.cpp
