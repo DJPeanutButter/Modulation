@@ -27,7 +27,7 @@ Color INVERT (Color &c){
 	return c;
 }
 
-void inline SetColor (Color c){
+void SetColor (Color c){
 	glColor3f (c.r, c.g, c.b);
 	return;
 }
