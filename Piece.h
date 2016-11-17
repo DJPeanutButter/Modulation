@@ -1,3 +1,6 @@
+#ifndef _PIECE_H_
+#define _PIECE_H_
+
 #include "Color.h"
 
 Struct Piece{
@@ -15,3 +18,5 @@ Struct Piece{
 	Piece (char r, char c);
 	Piece (char r, char c, char t);
 };
+
+#endif _PIECE_H_
