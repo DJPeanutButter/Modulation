@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <windows.h>
-#include <gl/gl.h>
-#include <math.h>
+#include "Piece.h"
 
 #define GD_COLS 16
 #define GD_ROWS 24
